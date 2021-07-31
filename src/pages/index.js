@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Layout, SEO } from "./components/index.js";
+import { Layout, SEO } from "components";
 
 const IndexPage = () => (
   <Layout>
