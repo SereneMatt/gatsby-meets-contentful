@@ -5,29 +5,27 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       modules: [path.resolve(__dirname, "src"), "node_modules"]
     }
-  })
-}
+  });
+};
 
 exports.createPages = async ({ actions, graphql }) => {
   const { data } = await graphql(`
     query {
-      allMarkdownRemark {
+      allContentfulWhoIsMatt {
         edges {
           node {
-            fields {
-              slug
-            }
+            name
           }
         }
       }
     }
-  `)
-  data.allMarkdownRemark.edges.forEach(edge => {
-    const slug = edge.node.fields.slug
+  `);
+  data.allContentfulWhoIsMatt.edges.forEach(edge => {
+    const name = edge.node.name;
     actions.createPage({
-      path: slug,
-      component: require.resolve(`./src/templates/blog-post.js`),
-      context: { slug: slug },
-    })
-  })
-}
+      path: '/serene_matt',
+      component: require.resolve(`./src/pages/index.tsx`),
+      context: { name }
+    });
+  });
+};

@@ -1,5 +1,8 @@
 import React from "react";
 
-const Matt = (): JSX.Element => <div>Hi, this is Serene</div>;
+import { StyledContainer, StyledTitle } from './style';
+
+const Matt = ({ name }: { name: string; }): JSX.Element => <StyledContainer>
+  <StyledTitle>{name}</StyledTitle></StyledContainer>;
 
 export default Matt;

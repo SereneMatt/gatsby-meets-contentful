@@ -1,10 +1,6 @@
 {
   "name": "gatsby-monorepo",
   "private": true,
-  "workspaces": [
-    "site1",
-    "site2"
-  ],
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Serene Matt",
@@ -25,9 +21,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.26",
     "prettier": "2.3.2"
   },
   "keywords": [
