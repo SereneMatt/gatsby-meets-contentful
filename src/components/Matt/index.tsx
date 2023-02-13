@@ -1,15 +1,15 @@
 import React from "react";
 
-import { StyledContainer, StyledTitle } from './style';
+import { StyledContainer, StyledTitle, StyledSubTitle, ContactContainer } from './style';
 
 const Matt = ({ name }: { name: string; }): JSX.Element => <StyledContainer>
   <StyledTitle>{name}</StyledTitle>
-  <div>Fullstack Developer</div>
-  <div>
+  <StyledSubTitle>Fullstack Developer</StyledSubTitle>
+  <ContactContainer>
     <div>☏ +49 1635022948</div>
     <div>📧 serene1990@gmail.com</div>
     <div>📍 Berlin, Germany</div>
-  </div>
+  </ContactContainer>
   <div>
     <article>
       <div>
