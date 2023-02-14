@@ -31,3 +31,13 @@ export const ContactContainer = styled.div`
     justify-content: space-between;
   }
 `;
+
+export const StyledSubHeading = styled.h2`
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+`;
+
+export const StyledContent = styled.div`
+  padding: 0 0 6px;
+`;
