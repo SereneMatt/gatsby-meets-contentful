@@ -4,20 +4,21 @@ import {
   StyledContainer,
   StyledTitle,
   StyledSubTitle,
-  ContactContainer,
+  InfoContainer,
   StyledSubHeading,
-  StyledContent
+  StyledContent,
+  Role
 } from './style';
 
 const Matt = ({ name }: { name: string }): JSX.Element => (
   <StyledContainer>
     <StyledTitle>{name}</StyledTitle>
     <StyledSubTitle>Fullstack Developer</StyledSubTitle>
-    <ContactContainer>
+    <InfoContainer>
       <div>☏ +49 1635022948</div>
       <div>📧 serene1990@gmail.com</div>
       <div>📍 Berlin, Germany</div>
-    </ContactContainer>
+    </InfoContainer>
     <div>
       <article>
         <StyledSubHeading>Summary</StyledSubHeading>
@@ -31,15 +32,20 @@ const Matt = ({ name }: { name: string }): JSX.Element => (
         <StyledSubHeading>EXPERIENCE</StyledSubHeading>
         <div>
           <div>
-            <div>Fullstack Developer</div>
-            <div>
+            <Role>Fullstack Developer at Babbel</Role>
+            <InfoContainer>
               <div>🗓 09/2019 - Ongoing</div>
               <div>📍 Berlin</div>
-            </div>
-            <div>Fullstack Developer</div>
+              <div>https://about.babbel.com</div>
+            </InfoContainer>
           </div>
           <div>
-            <div>Fullstack Developer</div>
+            <Role>Fullstack Developer at TATA Consultancy Services (TCS)</Role>
+            <InfoContainer>
+              <div>🗓 02/2013 - 08/2019</div>
+              <div>📍 Kochi</div>
+              <div>https://www.tcs.com/</div>
+            </InfoContainer>
           </div>
         </div>
       </article>

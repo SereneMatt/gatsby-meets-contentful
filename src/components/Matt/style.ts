@@ -21,7 +21,7 @@ export const StyledSubTitle = styled.div`
   font-size: 21px;
 `;
 
-export const ContactContainer = styled.div`
+export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px 0;
@@ -40,4 +40,8 @@ export const StyledSubHeading = styled.h2`
 
 export const StyledContent = styled.div`
   padding: 0 0 6px;
+`;
+
+export const Role = styled.div`
+  font-weight: 600;
 `;
