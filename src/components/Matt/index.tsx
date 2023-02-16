@@ -7,7 +7,8 @@ import {
   InfoContainer,
   StyledSubHeading,
   StyledContent,
-  Role
+  Role,
+  StyledUl
 } from './style';
 
 const Matt = ({ name }: { name: string }): JSX.Element => (
@@ -36,15 +37,42 @@ const Matt = ({ name }: { name: string }): JSX.Element => (
             <InfoContainer>
               <div>🗓 09/2019 - Ongoing</div>
               <div>📍 Berlin</div>
-              <div>https://about.babbel.com</div>
+              <div>🌎 https://about.babbel.com</div>
             </InfoContainer>
+            <div>
+              Roles and responsibilities:
+              <StyledUl>
+                <li>
+                  Developing web applications for the language learning
+                  platform.
+                </li>
+                <li>
+                  Majorly works with React, Gatsby, Node.js, Typescript, AWS and
+                  Ruby.
+                </li>
+                <li>Involved in designing APIs and software architectures.</li>
+                <li>
+                  Leads engineering solutions for marketing related content
+                  management.
+                </li>
+                <li>
+                  Played an important role in creating pages for subscription
+                  and pricing plans for Babbel.
+                </li>
+                <li>
+                  Ideated and worked on internal products that help SEO managers
+                  optimize landing pages.
+                </li>
+                <li>Won twice at Babbel's annual hackday.</li>
+              </StyledUl>
+            </div>
           </div>
           <div>
             <Role>Fullstack Developer at TATA Consultancy Services (TCS)</Role>
             <InfoContainer>
               <div>🗓 02/2013 - 08/2019</div>
               <div>📍 Kochi</div>
-              <div>https://www.tcs.com/</div>
+              <div>🌎 https://www.tcs.com/</div>
             </InfoContainer>
           </div>
         </div>

@@ -44,4 +44,10 @@ export const StyledContent = styled.div`
 
 export const Role = styled.div`
   font-weight: 600;
+  font-size: 16px;
+`;
+
+export const StyledUl = styled.ul`
+  margin-top: 0px;
+  padding-inline-start: 20px;
 `;
